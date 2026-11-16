@@ -1,0 +1,33 @@
+name: Render UML diagrams
+on:
+  push:
+    paths:
+      - 'docs/UML_CLASS.mmd'
+      - 'docs/UML_SEQUENCE.mmd'
+      - '.github/workflows/render-uml.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Render class diagram
+        run: npx --yes @mermaid-js/mermaid-cli@11.12.0 -i docs/UML_CLASS.mmd -o docs/UML_CLASS.png -b white -w 2400
+      - name: Render sequence diagram
+        run: npx --yes @mermaid-js/mermaid-cli@11.12.0 -i docs/UML_SEQUENCE.mmd -o docs/UML_SEQUENCE.png -b white -w 2400
+      - name: Commit rendered diagrams
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/UML_CLASS.png docs/UML_SEQUENCE.png
+          if ! git diff --cached --quiet; then
+            git commit -m "Add rendered UML class and sequence PNG diagrams"
+            git push
+          fi
