@@ -10,7 +10,5 @@ This is the expected course schedule, **not proof that past demonstrations happe
 
 Course guidance states materials are due by the end of Week 9 and defense is in Week 10.
 
-- Week 1 feedback: [fill after actual meeting]
-- Week 2 feedback: [fill after actual meeting]
-- Week 3 feedback: [fill after actual meeting]
-- GitHub: https://github.com/erajgjkdhdi8u/StudySprint-Final-Project
+No written confirmation or notes from weekly instructor reviews have been provided for this repository. Do not claim that those meetings or demonstrations occurred without actual records. Add dates and feedback here only when verified.
+- GitHub: https://github.com/erajgjkdhdi8u/SDP-FINAL
