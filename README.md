@@ -71,8 +71,12 @@ These are **assigned responsibilities**, not claims of independently authored so
 
 Study Sprint is a single-user desktop app; it has no cloud sync or university integration. The CSV importer is intentionally simple. Changing tasks or scheduling options clears older generated sessions.
 
-## Academic work and submission
+## Submission materials
 
-The course requires a working GUI and at least six integrated design patterns, source ZIP, Git repository link, diagrams, test results, PDF report, and individual live defense. Everyone must demonstrate real contributions and understand the code.
+The submission package includes the Java source code, a PDF report, UML class and sequence diagrams, test results, and a Git repository link.
 
-This starter was developed with AI assistance. See `docs/AI_DISCLOSURE.md` and update the final report to accurately describe actual independent work. Do not fabricate contributors, commits, or dates.
+Each team member should be able to demonstrate the relevant features, explain their assigned patterns, and make a small code change during the individual defense.
+
+## Development tools and attribution
+
+The project implementation and initial documentation were prepared with assistance from ChatGPT. The team should describe verified individual contributions accurately in its final report. More details are in [docs/AI_DISCLOSURE.md](docs/AI_DISCLOSURE.md).
