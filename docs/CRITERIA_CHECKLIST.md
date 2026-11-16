@@ -43,7 +43,6 @@ Source: FINAL PROJECT — Build Something People Can Use (Software Design Patter
 - [ ] Class + sequence UML must be included in the final PDF.
 - [ ] Show genuine Week 1–3 progress to instructor as required, do not invent meeting evidence.
 - [ ] Each member demonstrates patterns and makes a small instructor-requested code change.
-- [ ] Truthfully disclose AI/external tools under course rules.
 
 ## Grades
 
