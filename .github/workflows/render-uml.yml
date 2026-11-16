@@ -18,10 +18,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+      - name: Configure headless browser
+        run: echo '{"args":["--no-sandbox","--disable-setuid-sandbox"]}' > /tmp/mermaid-puppeteer.json
       - name: Render class diagram
-        run: npx --yes @mermaid-js/mermaid-cli@11.12.0 -i docs/UML_CLASS.mmd -o docs/UML_CLASS.png -b white -w 2400
+        run: npx --yes @mermaid-js/mermaid-cli@11.12.0 -i docs/UML_CLASS.mmd -o docs/UML_CLASS.png -b white -w 2400 -p /tmp/mermaid-puppeteer.json
       - name: Render sequence diagram
-        run: npx --yes @mermaid-js/mermaid-cli@11.12.0 -i docs/UML_SEQUENCE.mmd -o docs/UML_SEQUENCE.png -b white -w 2400
+        run: npx --yes @mermaid-js/mermaid-cli@11.12.0 -i docs/UML_SEQUENCE.mmd -o docs/UML_SEQUENCE.png -b white -w 2400 -p /tmp/mermaid-puppeteer.json
       - name: Commit rendered diagrams
         run: |
           git config user.name "github-actions[bot]"
