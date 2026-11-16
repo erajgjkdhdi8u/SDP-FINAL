@@ -26,4 +26,4 @@ Responsibilities: CSV import and report output types. Demo importing the sample 
 
 All four must understand StudyPlan, StudyTask, StudySession, UI, validation, storage, tests and the full user journey. Each person should push real changes using their own account or open a PR, and explain limitations during defense.
 
-See `docs/UML_CLASS.mmd` and `docs/UML_SEQUENCE.mmd` for diagrams, and `docs/AI_DISCLOSURE.md` for tool attribution.
+See `docs/UML_CLASS.mmd` and `docs/UML_SEQUENCE.mmd` for diagrams.
