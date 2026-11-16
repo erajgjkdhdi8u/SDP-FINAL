@@ -65,7 +65,7 @@ These are **assigned responsibilities**, not claims of independently authored so
 - `ui` - Swing application window and forms
 - `src/test` - automated business checks
 - `samples` - input CSV
-- `docs` - UML, test plan, team responsibilities, AI disclosure
+- `docs` - UML diagrams, test plan, team responsibilities and defense notes
 
 ## Limitations
 
@@ -77,6 +77,3 @@ The submission package includes the Java source code, a PDF report, UML class an
 
 Each team member should be able to demonstrate the relevant features, explain their assigned patterns, and make a small code change during the individual defense.
 
-## Development tools and attribution
-
-The project implementation and initial documentation were prepared with assistance from ChatGPT. The team should describe verified individual contributions accurately in its final report. More details are in [docs/AI_DISCLOSURE.md](docs/AI_DISCLOSURE.md).
